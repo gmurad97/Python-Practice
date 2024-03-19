@@ -33,3 +33,8 @@
 # print(sep="separator_for_array",end="endline")
 
 # print("\n\t\b\\....")
+
+# input_first_value = float(input("enter first value\n"))
+# input_second_value = float(input("enter second value\n"))
+
+# print(input_first_value + input_second_value)

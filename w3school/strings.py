@@ -39,7 +39,36 @@ elif "hello" not in a.lower():
 # print(b.lstrip()) #trim left
 # print(b.rstrip()) #trim right
 
-b = "Hello, World"
+# b = "Hello, World"
 # print(b.replace("H","J"))
 # print("-".join(b.split(",")))
-print("<=>".join(b.split(",")))
+# print("<=>".join(b.split(",")))
+# print("|".join(b.strip() for b in b.split(",")))
+
+
+# print("Hello " + "World " + "I " + "am " + "Murad") # :D
+
+""" b = "Hello {}, how are you?"
+print(b.format("Murad")) """
+
+# print(f"Hello {'Murad'} how are you?")
+
+""" price = 59.432 """
+
+""" print(f"This is macbook, price {price:.1f}") """
+
+
+#STRING METHODS
+
+a = "hello, world"
+b = "Hello, World"
+
+# print(a.capitalize())
+# print(b.center(len(b) + 10,"*")) #fill
+# print(a.count("o")) #includes count
+# print(a.title())
+""" print()
+print()
+print()
+print()
+print() """

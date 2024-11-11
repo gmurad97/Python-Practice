@@ -72,30 +72,6 @@ c = "123456"
 # print(a.islower())
 # print(c.isdigit())
 # print(a.istitle())
-""" print(a.replace())
-print()
-print()
-print()
-print()
-print()
-print()
-print()
-print()
-print()
-print()
- """
-
-""" chatgpt """
-""" if a == b and isinstance(a, int) and isinstance(b, int):
-    print("Одинаковые значение и типы")
-else:
-    print("Либо значения, либо типы различны")
-
-    a = 5
-b = 5.0
-
-# Проверка на значение
-print(a == b)  # True, так как 5 == 5.0
-
-# Проверка на значение и тип
-print(a == b and type(a) == type(b))  # False, типы int и float """
+# print(a.replace("hello", "Hi"))
+# print(a.startswith("hello"))
+# print(a.endswith("stop"))

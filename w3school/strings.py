@@ -64,6 +64,8 @@ a = "hello, world"
 b = "Hello, World"
 c = "123456"
 
+# b[0] = "1" #TypeError: 'str' object does not support item assignment
+
 # print(a.capitalize())
 # print(b.center(len(b) + 10,"*")) #fill
 # print(a.count("o")) #includes count

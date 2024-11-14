@@ -60,9 +60,9 @@ print(b.format("Murad")) """
 
 # STRING METHODS
 
-a = "hello, world"
+""" a = "hello, world"
 b = "Hello, World"
-c = "123456"
+c = "123456" """
 
 # b[0] = "1" #TypeError: 'str' object does not support item assignment
 
@@ -77,3 +77,11 @@ c = "123456"
 # print(a.replace("hello", "Hi"))
 # print(a.startswith("hello"))
 # print(a.endswith("stop"))
+
+""" a = "-54"
+print(a.zfill(10))
+print(isinstance(a, int)) """
+
+""" a = "HelloWorld"
+print(a[::-1])
+print(id(a)) """

@@ -17,3 +17,9 @@ y = -6 """
 
 # print(x > 8 > y)
 # print(not (x > 10))
+
+
+""" a = 10
+
+print(isinstance(a, int))
+print(isinstance(a, str)) """

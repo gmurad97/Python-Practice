@@ -212,3 +212,103 @@ print(numbers)
 """ names = ["John", "Jane", "Joe"]
 names_copy = names.copy()
  """
+
+""" names = ["John", "Jane", "Joe"]
+for idx in range(len(names)):
+    print(names[idx]) """
+
+""" names = ["John", "Jane", "Joe"]
+idx = 0
+while idx <= len(names)-1:
+    print(names[idx])
+    idx += 1 """
+
+
+# List Comprehension
+
+"""
+1. Самое простое:
+Создай список квадратов чисел от 0 до 4.
+
+Результат должен быть:
+[0, 1, 4, 9, 16]
+"""
+
+""" numbers = [squares**2 for squares in range(0, 5)]
+print(numbers)
+ """
+
+"""
+2. Фильтр с условием:
+Создай список только чётных чисел из диапазона от 0 до 9.
+
+Результат должен быть:
+[0, 2, 4, 6, 8]
+"""
+
+""" numbers = [evenNum for evenNum in range(0,10) if evenNum % 2 == 0]
+print(numbers)
+ """
+
+"""
+3. Преобразование с фильтром:
+Умножь каждое нечётное число от 1 до 10 на 3.
+
+Результат должен быть:
+[3, 9, 15, 21, 27]
+"""
+
+""" numbers = [oddNumber*3 for oddNumber in range(1,11) if oddNumber % 2 != 0]
+print(numbers) """
+
+
+"""
+4. Сложение строк:
+Создай список, где к каждому имени из ['Alice', 'Bob', 'Charlie'] добавлено слово " is awesome!".
+
+Результат должен быть:
+['Alice is awesome!', 'Bob is awesome!', 'Charlie is awesome!']
+"""
+
+# variant
+""" words = ["Alice","Bob","Charlie"]
+words = [word + " is awesome!" for word in words]
+print(words) """
+
+# variant
+""" words = [word + " is awesome!" for word in ["Alice","Bob","Charlie"]]
+print(words) """
+
+# больше в голову ничего не пришло как по другому решить если есть способ лучший покажи
+
+"""
+5. Работа с вложенными циклами:
+Создай список всех пар чисел (x, y) для чисел от 1 до 3, где x меньше y.
+
+Результат должен быть:
+[(1, 2), (1, 3), (2, 3)]
+"""
+
+#я не уверен правильно ли или нет но результат верный
+# задача для первого раза сложная поэтому сначала полная версия кода
+""" x = 3
+y = 3
+number_pairs = []
+for val_x in range(1, x + 1):
+    for val_y in range(1, y + 1):
+        if val_x < val_y:
+            number_pairs.append((val_x, val_y))
+
+print(number_pairs) """
+
+# а теперь с помощью генератора списка
+
+""" x = 3
+y = 3
+number_pairs = [
+    (val_x, val_y)
+    for val_x in range(1, x + 1)
+    for val_y in range(1, y + 1)
+    if val_x < val_y
+]
+print(number_pairs) """

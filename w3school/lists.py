@@ -289,7 +289,7 @@ print(words) """
 [(1, 2), (1, 3), (2, 3)]
 """
 
-#я не уверен правильно ли или нет но результат верный
+# я не уверен правильно ли или нет но результат верный
 # задача для первого раза сложная поэтому сначала полная версия кода
 """ x = 3
 y = 3
@@ -312,3 +312,92 @@ number_pairs = [
     if val_x < val_y
 ]
 print(number_pairs) """
+
+
+# CONTINUE LEVEL SENIOR :D
+
+"""
+1.Объединение строк из вложенных списков
+Есть вложенный список строк:
+
+data = [["Alice", "Bob"], ["Charlie", "Dave"], ["Eve"]]
+Создай один плоский список, где каждая строка из вложенных списков добавлена с префиксом "Hello, ".
+
+Результат должен быть:
+["Hello, Alice", "Hello, Bob", "Hello, Charlie", "Hello, Dave", "Hello, Eve"]
+"""
+
+""" data = [["Alice", "Bob"], ["Charlie", "Dave"], ["Eve"]]
+nameList = ["Hello, " + name for datas in data for name in datas]
+print(nameList) """
+
+
+"""
+2. Квадраты простых чисел
+Найди квадраты всех простых чисел от 1 до 50.
+Результат должен быть:
+[4, 9, 25, 49, 121, 169, ...]  # квадраты простых чисел
+Подсказка: Напиши проверку на простое число прямо в List Comprehension.
+"""
+
+""" simpleNums = [
+    nums**2
+    for nums in range(2, 51)
+    if all(nums % x != 0 for x in range(2, int(nums**0.5) + 1))
+]
+print(simpleNums) """
+
+
+"""
+3. Комбинации слов
+Есть два списка:
+nouns = ["cat", "dog", "car"]
+adjectives = ["big", "small", "fast"]
+Создай список всех возможных сочетаний вида "adjective noun".
+
+Результат должен быть:
+["big cat", "big dog", "big car", "small cat", ..., "fast car"]
+"""
+
+""" nouns = ["cat", "dog", "car"]
+adjectives = ["big", "small", "fast"]
+
+newList = [f"{x} {y}" for x in adjectives for y in nouns]
+print(newList) """
+
+
+"""
+4. Сгруппировать числа по чётности
+Дан список чисел:
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+Создай словарь, где ключи — "even" и "odd", а значения — списки чётных и нечётных чисел соответственно.
+
+Результат должен быть:
+{"even": [2, 4, 6, 8, 10], "odd": [1, 3, 5, 7, 9]}
+"""
+
+""" numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+collection = {
+    "even": [even for even in numbers if even % 2 == 0],
+    "odd": [odd for odd in numbers if odd % 2 != 0],
+}
+print(collection) """
+
+
+"""
+5. Магический квадрат
+Создай список кортежей, где каждый кортеж содержит три числа (a, b, c) из диапазона 1–20, таких что их сумма равна 30.
+Условие: a <= b <= c (упорядоченные тройки).
+
+Результат должен быть:
+[(10, 10, 10), (8, 11, 11), (7, 11, 12), ...]
+"""
+
+""" collection = [
+    (a, b, c)
+    for a in range(1, 21)
+    for b in range(1, 21)
+    for c in range(1, 21)
+    if (a <= b <= c) and (a + b + c == 30)
+]
+print(collection) """

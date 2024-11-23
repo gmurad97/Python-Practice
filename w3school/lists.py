@@ -401,3 +401,33 @@ print(collection) """
     if (a <= b <= c) and (a + b + c == 30)
 ]
 print(collection) """
+
+# adlar = ["Rza", "GPT", "Vagif", "Ayxan", "Aytac", "Murad"]
+# if founded target name change current index item list to new name
+# adlar = [f"Hello {ad}" if ad.casefold() == "gpt" else f"How are you {ad}" for ad in adlar]
+
+
+# List Comprehension #ucked :D
+# adlar = [
+#     (
+#         f"Hello {ad}"
+#         if ad.casefold() == "gpt"
+#         else f"How are you {ad}" if ad.casefold() == "ayxan" else ad
+#     )
+#     for ad in adlar
+# ]
+
+
+# if "gpt" in map(lambda ad:ad.casefold(),adlar):
+#     print("Hello GPT!") #its me :D
+# elif "ayxan" in map(lambda ad:ad.casefold(),adlar):
+#     print("How are you Ayxan?")
+# else:
+#     print(":(")
+
+# print(adlar)
+
+# numbers = [1,128,32,64,4,2,8,16]
+# numbers.sort()
+# numbers.reverse()
+# print(numbers)

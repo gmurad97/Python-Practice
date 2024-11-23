@@ -1,2 +1,2 @@
-tuple_t = (1,)
-print(type(tuple_t))
+tuples_t = (1,)
+print(type(tuples_t))

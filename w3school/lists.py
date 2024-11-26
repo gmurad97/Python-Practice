@@ -431,3 +431,25 @@ print(collection) """
 # numbers.sort()
 # numbers.reverse()
 # print(numbers)
+
+
+""" myList = ["Apple","Kiwi","Mango","Banana","Lemon","Lime","Orange"]
+print(myList[::3])
+
+slicedListIdx = slice(None,None,3)
+print(myList[slicedListIdx]) """
+
+# print("\033[31mThis is red text\[0m")
+
+# a = "string"
+# print(a[0].upper() + a[-len(a) + 1 :])
+# print(a[0].upper() + a[1:])
+# print(a.capitalize())
+# print(a.title())
+
+#pip install colorama
+# import colorama as col
+
+# print(col.Fore.RED + "ПРИВЕТ" + col.Style.RESET_ALL)
+# or
+""" print("\033[48;2;46;204;113;38;2;0;0;255mGREEN_TEXT\033[0m") """

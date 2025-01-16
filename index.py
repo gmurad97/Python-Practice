@@ -1,31 +1,36 @@
-import telebot
-import webbrowser
+# Zen Python
+# import this
 
-bot = telebot.TeleBot("none api key ^_^")
+# Вот задача, где тебе нужно применить сортировку пузырьком:
 
+# Задача:
+# Напиши функцию на Python, которая принимает на вход список чисел и возвращает его, отсортированный в порядке убывания с использованием алгоритма сортировки пузырьком.
 
-@bot.message_handler(commands=["start"])
-def main(message):
-    bot.send_message(message.chat.id, "Hello World!")
+# Дополнительное задание:
 
+# Подсчитай, сколько обменов элементов произошло за время сортировки.
+# Оптимизируй алгоритм, чтобы он завершался раньше, если массив уже отсортирован.
+# Например:
+# bubble_sort([3, 1, 4, 1, 5, 9])
+# Ожидаемый результат: [9, 5, 4, 3, 1, 1]
 
-@bot.message_handler(commands=["hello"])
-def main(message):
-    bot.send_message(
-        message.chat.id,
-        f"Hello {message.from_user.first_name} {message.from_user.last_name}",
-    )
+# variant 1
 
-
-@bot.message_handler()
-def idx(message):
-    if message.text.lower() == "w3school":
-        bot.reply_to(
-            message,
-            "is time to learning!!!Weee :3",
-        )
-        webbrowser.open("https://www.w3schools.com")
+# arr = [3, 1, 4, 1, 5, 9]
 
 
-bot.infinity_polling()
-""" bot.polling(non_stop=True) """
+# def bubble_sort(arr):
+#     n = len(arr)
+
+#     for x in range(n):
+#         swapped = False
+#         for y in range(0, n - x - 1):
+#             if arr[y + 1] > arr[y]:
+#                 arr[y], arr[y + 1] = arr[y + 1], arr[y]
+#                 swapped = True
+#         if not swapped:
+#             break
+#     return arr
+
+
+# print(bubble_sort(arr))

@@ -59,8 +59,23 @@ print(max_digit_in_num) """
 
 # Уровень 4: Для разминки мозга
 # Реализуй "угадай число". Программа загадывает случайное число от 1 до 100 (используй random.randint), а пользователь должен его угадать. Программа подсказывает, больше или меньше загаданное число. Цикл завершается, когда число угадано.
+""" import random
 
+random_num = random.randint(1, 100)
+max_attempts = 10
 
+while max_attempts > 0:
+    input_num = int(input("Enter a number:"))
+    if input_num > random_num:
+        print(f"The number you guessed is less than yours. Attempts:{max_attempts}")
+    if input_num < random_num:
+        print(f"The number you guessed is greater than yours. Attempts:{max_attempts}")
+    if input_num == random_num:
+        print(f"You won!")
+        break
+    max_attempts -= 1
+else:
+    print(f"Attempts are over! The Hidden Number {random_num}") """
 
 
 # Напиши программу, которая запрашивает у пользователя строку и переворачивает её (без использования [::-1] или функций вроде reversed). Используй только цикл while.
